@@ -28,5 +28,10 @@ public class FactoryDesignPatternApplication implements CommandLineRunner {
 		// Provides PayUPaymentProvider instance usage the same to accept payment
 		paymentProviderFactory.getPaymentProvider(PayUPaymentProvider.BEAN_ID).acceptPayment();
 
+		// Provides PaytmPaymentProvider instance usage the same to accept payment
+		paymentProviderFactory.getPaymentProvider(PaytmPaymentProvider.BEAN_ID).acceptPayment();
+
+
+
 	}
 }
